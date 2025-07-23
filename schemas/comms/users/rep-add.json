@@ -1,7 +1,7 @@
 ﻿{
     "title": "Rep Add Params Schema",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/static/schemas/comms/users/rep-add.json",
+    "$id": "https://static.echo-chat.au//schemas/comms/users/rep-add.json",
     "type": "object",
     "required": [
         "user"
@@ -13,7 +13,7 @@
         },
         "remark": {
             "type": "object",
-            "$ref": "/static/schemas/user/reputation/remark.json"
+            "$ref": "https://static.echo-chat.au//schemas/user/reputation/remark.json"
         }
     }
 }

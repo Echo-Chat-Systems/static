@@ -1,6 +1,6 @@
 ﻿{
     "title": "Generic Acknowledge Message Format",
-    "$id": "/static/schemas/comms/generic-ack.json",
+    "$id": "https://static.echo-chat.au//schemas/comms/generic-ack.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": ["target", "data"],

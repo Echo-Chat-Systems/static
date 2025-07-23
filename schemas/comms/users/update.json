@@ -1,7 +1,7 @@
 ﻿{
     "title": "Update Params Schema",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/static/schemas/comms/users/update.json",
+    "$id": "https://static.echo-chat.au//schemas/comms/users/update.json",
     "type": "object",
     "required": [
         "user"
@@ -9,7 +9,7 @@
     "properties": {
         "user": {
             "type": "object",
-            "$ref": "/static/schemas/user/private-user.json"
+            "$ref": "https://static.echo-chat.au//schemas/user/private-user.json"
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿{
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/static/schemas/auth/keypair.json",
+    "$id": "https://static.echo-chat.au//schemas/auth/keypair.json",
     "title": "Keypair Schema",
     "type": "object",
     "properties": {

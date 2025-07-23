@@ -1,6 +1,6 @@
 {
     "title": "Basic WS Message Format",
-    "$id": "/static/schemas/comms/basic-message.json",
+    "$id": "https://static.echo-chat.au//schemas/comms/basic-message.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": ["target", "data"],

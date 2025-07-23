@@ -1,6 +1,6 @@
 ﻿{
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://echo.dafox.au/static/schemas/auth/user/user-file.json",
+    "$id": "https://static.echo-chat.au//schemas/auth/user/user-file.json",
     "title": "User File Schema",
     "description": "A user file contains only the user's keys and server information.",
     "type": "object",
@@ -64,7 +64,7 @@
                 "prv_ek": "JmomL0NOaVhoU0t7IGJJJCtbTzVJP19b"
             },
             "server": {
-                "address": "https://echo.dafox.au",
+                "address": "https://echo-chat.au",
                 "port": 443,
                 "version": "1.0.0"
             }
