@@ -4,11 +4,17 @@
     "$id": "https://static.echo-chat.au/schemas/comms/users/rep-query-response.json",
     "type": "object",
     "required": [
-        ""
+        "users"
     ],
     "properties": {
         "users": {
-            "type": "array",
+            "type": "object",
+            "patternProperties": {
+                "^.*&": {
+                    "type": "object",
+                    "$ref": "https://static.echo-chat.au/schemas/user/reputation/remark.json"
+                }
+            }
         }
     }
 }
