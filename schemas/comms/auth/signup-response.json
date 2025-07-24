@@ -1,0 +1,15 @@
+﻿{
+    "title": "Signup Response Params Schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://static.echo-chat.au/schemas/comms/auth/signup-response.json",
+    "type": "object",
+    "required": [
+        "user"
+    ],
+    "properties": {
+        "user": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/user/private-user.json"
+        }
+    }
+}
