@@ -1,7 +1,7 @@
 ﻿{
     "title": "Reputation Query Params Schema",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://static.echo-chat.au//schemas/comms/users/rep-query.json",
+    "$id": "https://static.echo-chat.au/schemas/comms/users/rep-query.json",
     "type": "object",
     "required": [
         "pg"

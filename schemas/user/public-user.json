@@ -1,6 +1,6 @@
 {
     "title": "Public User Information Schema",
-    "$id": "https://static.echo-chat.au//schemas/user/public-user.json",
+    "$id": "https://static.echo-chat.au/schemas/user/public-user.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema" ,
     "type": "object",
     "required": [
@@ -12,21 +12,21 @@
     "properties": {
         "origin": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au//schemas/meta/origin.json"
+            "$ref": "https://static.echo-chat.au/schemas/meta/origin.json"
         },
         "keys": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au//schemas/crypto/keypair.json"
+            "$ref": "https://static.echo-chat.au/schemas/crypto/keypair.json"
         },
         "profile": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au//schemas/user/profile.json"
+            "$ref": "https://static.echo-chat.au/schemas/user/profile.json"
         },
         "rep": {
             "type": "array",
             "contains": {
                 "type": "object",
-                "$ref": "https://static.echo-chat.au//schemas/user/reputation/remark.json"
+                "$ref": "https://static.echo-chat.au/schemas/user/reputation/remark.json"
             }
         }
     }

@@ -1,7 +1,7 @@
 {
     "title": "Get Params Schema",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://static.echo-chat.au//schemas/comms/users/get.json",
+    "$id": "https://static.echo-chat.au/schemas/comms/users/get.json",
     "type": "object",
     "required": [
         "id"

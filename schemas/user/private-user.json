@@ -1,6 +1,6 @@
 {
     "title": "Private User Information Schema",
-    "$id": "https://static.echo-chat.au//schemas/user/private-user.json",
+    "$id": "https://static.echo-chat.au/schemas/user/private-user.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema" ,
     "type": "object",
     "required": [
@@ -12,19 +12,19 @@
     "properties": {
         "origin": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au//schemas/meta/origin.json"
+            "$ref": "https://static.echo-chat.au/schemas/meta/origin.json"
         },
         "keys": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au//schemas/crypto/keypair.json"
+            "$ref": "https://static.echo-chat.au/schemas/crypto/keypair.json"
         },
         "profile": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au//schemas/user/profile.json"
+            "$ref": "https://static.echo-chat.au/schemas/user/profile.json"
         },
         "rep": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au//schemas/user/reputation/rep.json"
+            "$ref": "https://static.echo-chat.au/schemas/user/reputation/rep.json"
         }
     }
 }

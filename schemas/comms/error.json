@@ -1,7 +1,7 @@
 {
     "title": "Error Params Schema",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://static.echo-chat.au//schemas/comms/error.json",
+    "$id": "https://static.echo-chat.au/schemas/comms/error.json",
     "type": "object",
     "required": [
         "source"
@@ -9,7 +9,7 @@
     "properties": {
         "source": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au//schemas/comms/basic-message.json"
+            "$ref": "https://static.echo-chat.au/schemas/comms/basic-message.json"
         }
     }
 }

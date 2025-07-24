@@ -1,7 +1,7 @@
 {
     "title": "Signin Complete Params Schema",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://static.echo-chat.au//schemas/comms/auth/signin/signin-complete.json",
+    "$id": "https://static.echo-chat.au/schemas/comms/auth/signin/signin-complete.json",
     "type": "object",
     "required": [
         "status",
@@ -10,7 +10,7 @@
     "properties": {
         "user": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au//schemas/user/private-user.json"
+            "$ref": "https://static.echo-chat.au/schemas/user/private-user.json"
         }
     }
 }

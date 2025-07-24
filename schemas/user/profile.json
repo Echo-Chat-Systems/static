@@ -1,6 +1,6 @@
 {
     "title": "User Profile Schema",
-    "$id": "https://static.echo-chat.au//schemas/user/profile.json",
+    "$id": "https://static.echo-chat.au/schemas/user/profile.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": [

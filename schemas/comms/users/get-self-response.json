@@ -1,6 +1,6 @@
 ﻿{
     "title": "Get-Self Response Params Schema",
-    "$id": "https://static.echo-chat.au//schemas/user/private-user.json",
+    "$id": "https://static.echo-chat.au/schemas/user/private-user.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema" ,
     "type": "object",
     "required": [
@@ -9,7 +9,7 @@
     "properties": {
         "user": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au//schemas/user/private-user.json"
+            "$ref": "https://static.echo-chat.au/schemas/user/private-user.json"
         }
     }
 }

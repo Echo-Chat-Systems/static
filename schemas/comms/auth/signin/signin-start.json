@@ -1,7 +1,7 @@
 {
     "title": "Signin Start Params Schema",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://static.echo-chat.au//schemas/comms/auth/signin/signin-start.json",
+    "$id": "https://static.echo-chat.au/schemas/comms/auth/signin/signin-start.json",
     "type": "object",
     "required": [
         "sk", "ek"
