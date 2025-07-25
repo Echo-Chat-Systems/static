@@ -1,0 +1,8 @@
+{
+    "title": "Permission Number Schema",
+    "$id": "https://static.echo-chat.au/schemas/meta/permission.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "integer",
+    "minimum": 0,
+    "maximum": 4294967295
+}
