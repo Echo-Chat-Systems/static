@@ -12,8 +12,11 @@
             "type": "integer"
         },
         "remarks": {
-            "type": "object",
-            "$ref": "https://static.echo-chat.au/schemas/user/reputation/remark.json"
+            "type": "array",
+            "items": {
+                "type": "object",
+                "$ref": "https://static.echo-chat.au/schemas/user/reputation/remark.json"
+            }
         }
     }
 }
