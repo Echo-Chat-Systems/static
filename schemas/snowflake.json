@@ -1,0 +1,8 @@
+{
+    "title": "Snowflake Schema",
+    "$id": "https://static.echo-chat.au/schemas/snowflake.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "integer",
+    "minimum": 0,
+    "maximum": 18446744073709551615
+}
