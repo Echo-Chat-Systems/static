@@ -1,0 +1,31 @@
+{
+    "title": "Channel Configuration Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/channel/config.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+        "access"
+    ],
+    "properties": {
+        "access": {
+            "type": "object",
+            "required": [],
+            "properties": {
+                "private": {
+                    "type": "boolean"
+                },
+                "enabled-roles": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://static.echo-chat.au/schemas/meta/snowflake.json"
+                    }
+                }
+            }
+        }
+    },
+    "patternProperties": {
+        "^type$": {
+            "type": "string"
+        }
+    }
+}
