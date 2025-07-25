@@ -11,14 +11,8 @@
             "type": "object",
             "required": [],
             "properties": {
-                "private": {
-                    "type": "boolean"
-                },
-                "enabled-roles": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "https://static.echo-chat.au/schemas/meta/snowflake.json"
-                    }
+                "minimum-role-index": {
+                    "type": "integer"
                 }
             }
         }
