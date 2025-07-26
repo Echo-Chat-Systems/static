@@ -3,10 +3,29 @@
     "$id": "https://static.echo-chat.au/schemas/channel/customisation.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
-    "required": [
-
-    ],
     "properties": {
-
+        "media": {
+            "icon": {
+                "type": "string",
+                "format": "url"
+            },
+            "banner": {
+                "type": "string",
+                "format": "url"
+            },
+            "background": {
+                "type": "string",
+                "format": "url"
+            }
+        },
+        "topic": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "css": {
+            "type": "string"
+        }
     }
 }
