@@ -7,6 +7,17 @@
         "access"
     ],
     "properties": {
+        "modes": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": ["text", "voice"]
+            }
+        },
+        "chat-enabled": {
+            "type": "boolean",
+            "default": true
+        },
         "access": {
             "type": "object",
             "required": [],
@@ -15,11 +26,6 @@
                     "type": "integer"
                 }
             }
-        }
-    },
-    "patternProperties": {
-        "^type$": {
-            "type": "string"
         }
     }
 }
