@@ -6,16 +6,13 @@
     "properties": {
         "media": {
             "icon": {
-                "type": "string",
-                "format": "url"
+                "type": "string"
             },
             "banner": {
-                "type": "string",
-                "format": "url"
+                "type": "string"
             },
             "background": {
-                "type": "string",
-                "format": "url"
+                "type": "string"
             }
         },
         "topic": {
