@@ -17,6 +17,9 @@
         "name": {
             "type": "string"
         },
+        "parent": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+        },
         "index": {
             "type": "integer",
             "minimum": 1
