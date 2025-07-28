@@ -1,0 +1,18 @@
+{
+    "title": "Guild Customisation Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/guild/guild.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+
+    ],
+    "properties": {
+        "banner": {
+            "type": "string",
+            "format": "url"
+        },
+        "icon": {
+
+        }
+    }
+}

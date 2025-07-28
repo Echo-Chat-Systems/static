@@ -1,0 +1,15 @@
+{
+    "title": "Guild Config Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/guild/guild.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+
+    ],
+    "properties": {
+        "channel-override": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/channel/config.json"
+        }
+    }
+}
