@@ -10,27 +10,6 @@
         "notifications": {
             "type": "object",
             "$ref": "https://static.echo-chat.au/schemas/meta/notifications.json"
-        },
-        "moderation": {
-            "type": "object",
-            "properties": {
-                "rules": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "required": ["match", "action"],
-                        "properties": {
-                            "match": {
-                                "type": "string"
-                            },
-                            "action": {
-                                "type": "string",
-                                "enum": ["remove", "kick", "ban"]
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }
