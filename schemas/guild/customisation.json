@@ -13,9 +13,8 @@
         "icon": {
             "type": "string"
         },
-        "notifications": {
-            "type": "object",
-            "$ref": "https://static.echo-chat.au/schemas/meta/notifications.json"
+        "css": {
+            "type": "string"
         }
     }
 }
