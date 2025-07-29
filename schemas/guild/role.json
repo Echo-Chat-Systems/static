@@ -28,7 +28,8 @@
             }
         },
         "customisation": {
-            "type": "object"
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/guild/role-customisation.json"
         }
     }
 }

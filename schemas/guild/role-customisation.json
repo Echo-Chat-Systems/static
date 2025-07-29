@@ -1,0 +1,25 @@
+﻿{
+    "title": "Role Customisation Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/guild/role-customisation.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+    ],
+    "properties": {
+        "banner": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        },
+        "text-colour": {
+            "type": "string"
+        },
+        "background-colour": {
+            "type": "string"
+        },
+        "css": {
+            "type": "string"
+        }
+    }
+}

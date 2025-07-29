@@ -1,6 +1,6 @@
 ﻿{
     "title": "Notifications Configuration Information Schema",
-    "$id": "https://static.echo-chat.au/schemas/postie/notifications.json",
+    "$id": "https://static.echo-chat.au/schemas/postie/notif-config.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": [
