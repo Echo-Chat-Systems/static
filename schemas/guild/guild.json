@@ -16,6 +16,9 @@
         "id": {
             "type": "integer"
         },
+        "name": {
+            "type": "string"
+        },
         "owner": {
             "type": "string",
             "format": "base64"
