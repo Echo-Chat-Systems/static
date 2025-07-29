@@ -1,0 +1,20 @@
+﻿{
+    "title": "Notifications Configuration Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/meta/notifications.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+    ],
+    "properties": {
+        "mode": {
+            "type": "string",
+            "enum": ["all", "mentions", "direct-mentions"]
+        },
+        "suppressed-roles": {
+            "type": "array",
+            "items": {
+                "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+            }
+        }
+    }
+}
