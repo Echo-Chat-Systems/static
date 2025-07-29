@@ -8,11 +8,14 @@
     ],
     "properties": {
         "banner": {
-            "type": "string",
-            "format": "url"
+            "type": "string"
         },
         "icon": {
-
+            "type": "string"
+        },
+        "notifications": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/meta/notifications.json"
         }
     }
 }

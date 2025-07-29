@@ -17,6 +17,10 @@
                     "$ref": "https://static.echo-chat.au/schemas/meta/permission.json"
                 }
             }
+        },
+        "notification-override": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/meta/notifications.json"
         }
     }
 }

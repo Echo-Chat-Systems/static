@@ -1,0 +1,35 @@
+{
+    "title": "Role Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/guild/role.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+        "id", "user-id", "roles"
+    ],
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "user-id": {
+            "type": "string",
+            "format": "base64"
+        },
+        "roles": {
+            "type": "array",
+            "items": {
+                "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+            }
+        },
+        "nickname": {
+            "type": "string"
+        },
+        "user-override": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/user/profile.json"
+        },
+        "guild-override": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/user/profile.json"
+        }
+    }
+}

@@ -28,7 +28,7 @@
                 }
             }
         },
-        "customisation-override":{
+        "user-override":{
             "type": "object",
             "$ref": "https://static.echo-chat.au/schemas/channel/customisation.json"
         }

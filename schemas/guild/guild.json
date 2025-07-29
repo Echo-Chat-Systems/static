@@ -8,6 +8,7 @@
         "owner",
         "members",
         "channels",
+        "roles",
         "configuration",
         "customisation"
     ],
@@ -30,7 +31,14 @@
             "type": "array",
             "items": {
                 "type": "object",
-
+                "$ref": "https://static.echo-chat.au/schemas/channel/channel.json"
+            }
+        },
+        "roles": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "$ref": "https://static.echo-chat.au/schemas/guild/role.json"
             }
         },
         "media": {
