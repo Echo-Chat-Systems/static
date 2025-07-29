@@ -1,0 +1,34 @@
+{
+    "title": "Emoji Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/media/emoji.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+        "id",
+        "from",
+        "ref"
+    ],
+    "properties": {
+        "id": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+        },
+        "from": {
+            "type": "string",
+            "enum": ["guild", "server", "ascii"]
+        },
+        "ref": {
+            "type": "string"
+        },
+        "size": {
+            "type": "object",
+            "properties": {
+                "x": {
+                    "type": "integer"
+                },
+                "y": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

@@ -46,7 +46,7 @@
                 "type": "array",
                 "items": {
                     "type": "object",
-                    "$ref": "https://static.echo-chat.au/schemas/guild/sticker.json"
+                    "$ref": "https://static.echo-chat.au/schemas/media/sticker.json"
                 }
             },
             "emojis": {
