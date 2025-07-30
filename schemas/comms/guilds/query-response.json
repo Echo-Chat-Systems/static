@@ -1,0 +1,17 @@
+﻿{
+    "title": "Query Response Params Schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://static.echo-chat.au/schemas/comms/guilds/query-response.json",
+    "type": "object",
+    "required": [
+        "guilds"
+    ],
+    "properties": {
+        "guilds": {
+            "type": "array",
+            "items": {
+                "$ref": "https://static.echo-chat.au/schemas/guild/guild.json"
+            }
+        }
+    }
+}
