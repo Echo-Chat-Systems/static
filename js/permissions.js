@@ -1,5 +1,5 @@
 export const GuildPermissions = [
-    [0x8000_0000, "Guild", "guild:admin"],
+    [0x8000_0000, "Administrator", "guild:admin"],
     [0x4000_0000, "View Administrator Logs", "guild:audit"],
     [0x2000_0000, "View Insights", "guild:insights"],
     [0x1000_0000, "Manage Guild", "guild:manage"],
