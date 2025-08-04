@@ -24,6 +24,12 @@
             "type": "integer",
             "minimum": 1
         },
+        "members": {
+            "type": "array",
+            "items": {
+                "$ref": "https://static.echo-chat.au/schemas/channel/member.json"
+            }
+        },
         "config": {
             "type": "object",
             "$ref": "https://static.echo-chat.au/schemas/channel/config.json"
