@@ -1,6 +1,6 @@
 {
     "title": "Channel Member Information Schema",
-    "$id": "https://static.echo-chat.au/schemas/channel/member.json",
+    "$id": "https://static.echo-chat.au/schemas/definitions/channel/member.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": [

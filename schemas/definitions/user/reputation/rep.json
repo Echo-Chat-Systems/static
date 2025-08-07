@@ -1,6 +1,6 @@
 {
     "title": "Reputation Information Schema",
-    "$id": "https://static.echo-chat.au/schemas/user/reputation/rep.json",
+    "$id": "https://static.echo-chat.au/schemas/definitions/user/reputation/rep.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": [
@@ -15,7 +15,7 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "$ref": "https://static.echo-chat.au/schemas/user/reputation/remark.json"
+                "$ref": "https://static.echo-chat.au/schemas/definitions/user/reputation/remark.json"
             }
         }
     }

@@ -15,7 +15,7 @@
         },
         "keys": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au/schemas/crypto/keypair.json"
+            "$ref": "https://static.echo-chat.au/schemas/definitions/crypto/keypair.json"
         },
         "profile": {
             "type": "object",
