@@ -1,0 +1,17 @@
+﻿{
+    "title": "Assign Params Schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://static.echo-chat.au/schemas/comms/roles/assign.json",
+    "type": "object",
+    "required": [
+        "user", "role"
+    ],
+    "properties": {
+        "user": {
+            "$ref": "https://static.echo-chat.au/schemas/uid.json"
+        },
+        "role": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+        }
+    }
+}
