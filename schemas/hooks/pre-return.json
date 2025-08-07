@@ -1,0 +1,15 @@
+﻿{
+    "title": "Pre-Execute Hook Return",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://static.echo-chat.au/schemas/hooks/pre-return.json",
+    "type": "object",
+    "required": [
+        "continue"
+    ],
+    "properties": {
+        "out": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/comms/basic-message.json"
+        }
+    }
+}

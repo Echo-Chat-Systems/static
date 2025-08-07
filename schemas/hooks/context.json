@@ -1,0 +1,25 @@
+﻿{
+    "title": "Hook Context",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://static.echo-chat.au/schemas/hooks/context.json",
+    "type": "object",
+    "required": [
+        "source"
+    ],
+    "properties": {
+        "stage": {
+            "type": "string",
+            "enum": ["pre", "post"]
+        },
+        "in": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/comms/basic-message.json"
+        },
+        "data": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        }
+    }
+}
