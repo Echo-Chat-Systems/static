@@ -1,0 +1,14 @@
+﻿{
+    "title": "Create Response Params Schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://static.echo-chat.au/schemas/comms/roles/create-response.json",
+    "type": "object",
+    "required": [
+        "id"
+    ],
+    "properties": {
+        "id": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+        }
+    }
+}

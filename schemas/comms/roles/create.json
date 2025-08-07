@@ -1,0 +1,18 @@
+﻿{
+    "title": "Create Params Schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://static.echo-chat.au/schemas/comms/roles/create.json",
+    "type": "object",
+    "required": [
+        "guild",
+        "name"
+    ],
+    "properties": {
+        "guild": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+        },
+        "name": {
+            "type": "string"
+        }
+    }
+}
