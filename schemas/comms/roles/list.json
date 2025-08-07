@@ -1,0 +1,14 @@
+﻿{
+    "title": "List Params Schema",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://static.echo-chat.au/schemas/comms/roles/list.json",
+    "type": "object",
+    "required": [
+        "guild"
+    ],
+    "properties": {
+        "guild": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+        }
+    }
+}
