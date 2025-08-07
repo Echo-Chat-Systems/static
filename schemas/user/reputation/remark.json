@@ -14,8 +14,7 @@
             "maximum": 1
         },
         "user": {
-            "type": "string",
-            "format": "base64"
+            "$ref": "https://static.echo-chat.au/schemas/uid.json"
         },
         "comment": {
             "type": "string"

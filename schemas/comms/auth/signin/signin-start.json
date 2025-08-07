@@ -8,8 +8,7 @@
     ],
     "properties": {
         "sk": {
-            "type": "string",
-            "format": "base64"
+            "$ref": "https://static.echo-chat.au/schemas/uid.json"
         },
         "ek": {
             "type": "string",
