@@ -1,6 +1,6 @@
 {
     "title": "Sticker Information Schema",
-    "$id": "https://static.echo-chat.au/schemas/media/sticker.json",
+    "$id": "https://static.echo-chat.au/schemas/definitions/media/sticker.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": [
@@ -14,10 +14,14 @@
         },
         "from": {
             "type": "string",
-            "enum": ["guild", "server", "ascii"]
+            "enum": ["guild", "server"]
         },
         "ref": {
             "type": "string"
+        },
+        "source": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json",
+            "description": "Guild ID of the emoji if it is a custom emoji."
         },
         "size": {
             "type": "object",

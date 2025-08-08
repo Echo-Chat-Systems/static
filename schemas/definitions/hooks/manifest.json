@@ -1,7 +1,7 @@
 ﻿{
     "title": "Hook Manifest",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://static.echo-chat.au/schemas/hooks/manifest.json",
+    "$id": "https://static.echo-chat.au/schemas/definitions/hooks/manifest.json",
     "type": "object",
     "required": [
         "source",

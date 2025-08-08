@@ -1,6 +1,6 @@
 {
     "title": "Emoji Information Schema",
-    "$id": "https://static.echo-chat.au/schemas/media/emoji.json",
+    "$id": "https://static.echo-chat.au/schemas/definitions/media/emoji.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": [

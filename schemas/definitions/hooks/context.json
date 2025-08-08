@@ -1,7 +1,7 @@
 ﻿{
     "title": "Hook Context",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://static.echo-chat.au/schemas/hooks/context.json",
+    "$id": "https://static.echo-chat.au/schemas/definitions/hooks/context.json",
     "type": "object",
     "required": [
         "source"
