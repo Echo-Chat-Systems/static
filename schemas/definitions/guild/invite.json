@@ -1,0 +1,38 @@
+{
+    "title": "Guild Invite Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/definitions/guilds/invite.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+        "id",
+        "code"
+    ],
+    "properties": {
+        "id": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+        },
+        "code": {
+            "type": "string",
+            "format": "base64",
+            "minLength": 8,
+            "maxLength": 8
+        },
+        "guild": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+        },
+        "attribution": {
+            "$ref": "https://static.echo-chat.au/schemas/uid.json"
+        },
+        "uses": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "target": {
+            "$ref": "https://static.echo-chat.au/schemas/uid.json"
+        },
+        "expires": {
+            "type": "string",
+            "format": "date-time"
+        }
+    }
+}
