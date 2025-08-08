@@ -7,7 +7,8 @@
         "origin",
         "keys",
         "profile",
-        "rep"
+        "rep",
+        "hooks"
     ],
     "properties": {
         "origin": {
@@ -25,6 +26,30 @@
         "rep": {
             "type": "object",
             "$ref": "https://static.echo-chat.au/schemas/definitions/user/reputation/rep.json"
+        },
+        "settings": {
+            "type": "string",
+            "format": "base64"
+        },
+        "hooks": {
+            "type": "object",
+            "required": [
+                "enabled", "blocked"
+            ],
+            "properties": {
+                "enabled": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+                    }
+                },
+                "blocked": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+                    }
+                }
+            }
         }
     }
 }
