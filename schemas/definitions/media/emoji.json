@@ -19,6 +19,10 @@
         "ref": {
             "type": "string"
         },
+        "source": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json",
+            "description": "Guild ID of the emoji if it is a custom emoji."
+        },
         "size": {
             "type": "object",
             "properties": {
