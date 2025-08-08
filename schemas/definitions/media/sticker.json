@@ -12,6 +12,10 @@
         "id": {
             "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
         },
+        "name": {
+            "type": "string",
+            "description": "Name of the sticker."
+        },
         "from": {
             "type": "string",
             "enum": ["guild", "server"]
