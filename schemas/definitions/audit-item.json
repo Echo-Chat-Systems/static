@@ -1,0 +1,113 @@
+{
+    "title": "Audit Log Item Schema",
+    "$id": "https://static.echo-chat.au/schemas/definitions/audit-item.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+        "id",
+        "user",
+        "scope",
+        "affected",
+        "origin"
+    ],
+    "properties": {
+        "id": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+        },
+        "user": {
+            "$ref": "https://static.echo-chat.au/schemas/uid.json"
+        },
+        "scope": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$ref": "https://static.echo-chat.au/schemas/snowflake.json",
+                    "description": "ID of the scope, such as a channel or guild."
+                },
+                "source": {
+                    "type": "string",
+                    "enum": [
+                        "channel",
+                        "guild",
+                        "user"
+                    ]
+                }
+            }
+        },
+        "affected": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "$ref": "https://static.echo-chat.au/schemas/snowflake.json",
+                    "description": "ID of the affected entity, such as a user or channel."
+                },
+                "source": {
+                    "type": "string",
+                    "description": "The type of the affected entity."
+                }
+            }
+        },
+        "before": {
+            "type": "object",
+            "description": "The state of the affected entity before the change.",
+            "properties": {
+                "hash": {
+                    "type": "string",
+                    "description": "A hash representing the state of the entity before the change."
+                },
+                "data": {
+                    "type": "object",
+                    "description": "The data representing the state of the entity before the change."
+                }
+            }
+        },
+        "after": {
+            "type": "object",
+            "description": "The state of the affected entity after the change.",
+            "properties": {
+                "hash": {
+                    "type": "string",
+                    "description": "A hash representing the state of the entity after the change."
+                },
+                "data": {
+                    "type": "object",
+                    "description": "The data representing the state of the entity after the change."
+                },
+                "diff": {
+                    "type": "array",
+                    "description": "The differences between the before and after states.",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "index": {
+                                "type": "integer",
+                                "description": "Byte index of the first byte of the key that was changed in the minified version of the data."
+                            },
+                            "new": {
+                                "description": "The new value of the key that was changed."
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "origin": {
+            "type": "object",
+            "description": "The origin of the change, such as a user action or system event.",
+            "properties": {
+                "target": {
+                    "type": "string",
+                    "description": "The target of the message that triggered the change."
+                },
+                "action": {
+                    "type": "string",
+                    "description": "The action that triggered the change, such as 'create', 'update', or 'delete'."
+                },
+                "system": {
+                    "type": "boolean",
+                    "description": "Whether the change was triggered by a system event."
+                }
+            }
+        }
+    }
+}
