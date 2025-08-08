@@ -14,7 +14,7 @@
         },
         "from": {
             "type": "string",
-            "enum": ["guild", "server", "ascii"]
+            "enum": ["guild", "server"]
         },
         "ref": {
             "type": "string"
