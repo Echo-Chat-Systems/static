@@ -1,0 +1,28 @@
+{
+    "title": "User Package Schema",
+    "$id": "https://static.echo-chat.au/schemas/definitions/hooks/data.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+        "keypair",
+        "profile",
+        "origin",
+        "sig"
+    ],
+    "properties": {
+        "profile": {
+            "$ref": "https://static.echo-chat.au/schemas/definitions/user/profile.json"
+        },
+        "keypair": {
+            "$ref": "https://static.echo-chat.au/schemas/definitions/crypto/keypair.json"
+        },
+        "origin": {
+            "$ref": "https://static.echo-chat.au/schemas/origin.json"
+        },
+        "sig": {
+            "type": "string",
+            "format": "base64"
+        },
+        "additionalProperties": false
+    }
+}
