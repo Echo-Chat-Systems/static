@@ -1,11 +1,12 @@
 {
     "title": "Guild Invite Information Schema",
-    "$id": "https://static.echo-chat.au/schemas/definitions/guilds/invite.json",
+    "$id": "https://static.echo-chat.au/schemas/definitions/guild/invite.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": [
         "id",
-        "code"
+        "code",
+        "customisation"
     ],
     "properties": {
         "id": {
@@ -33,6 +34,9 @@
         "expires": {
             "type": "string",
             "format": "date-time"
+        },
+        "customisation": {
+            "$ref": "https://static.echo-chat.au/schemas/definitions/guild/invite-customisation.json"
         }
     }
 }

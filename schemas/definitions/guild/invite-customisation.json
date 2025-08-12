@@ -1,0 +1,17 @@
+﻿{
+    "title": "Guild Invite Customisation Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/definitions/guild/invite-customisation.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "banner": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        },
+        "css": {
+            "type": "string"
+        }
+    }
+}
