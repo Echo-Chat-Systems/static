@@ -4,7 +4,8 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": [
-        "access"
+        "modes",
+        "encrypted"
     ],
     "properties": {
         "modes": {
@@ -14,9 +15,8 @@
                 "enum": ["text", "voice"]
             }
         },
-        "chat-enabled": {
-            "type": "boolean",
-            "default": true
+        "encrypted": {
+            "type": "boolean"
         },
         "access": {
             "type": "object",
@@ -29,7 +29,7 @@
         },
         "notifications": {
             "type": "object",
-            "$ref": "https://static.echo-chat.au/schemas/meta/notifications.json"
+            "$ref": "https://static.echo-chat.au/schemas/definitions/postie/notif-config.json"
         }
     }
 }

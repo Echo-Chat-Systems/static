@@ -1,6 +1,6 @@
 {
-    "title": "Emoji Information Schema",
-    "$id": "https://static.echo-chat.au/schemas/definitions/media/emoji.json",
+    "title": "Rich Media Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/definitions/media/rich.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "type": "object",
     "required": [
@@ -25,7 +25,7 @@
         },
         "source": {
             "$ref": "https://static.echo-chat.au/schemas/snowflake.json",
-            "description": "Guild ID of the emoji if it is a custom emoji."
+            "description": "Guild ID of the rich media item."
         },
         "size": {
             "type": "object",
