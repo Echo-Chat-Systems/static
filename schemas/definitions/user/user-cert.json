@@ -1,0 +1,25 @@
+﻿{
+    "title": "User-Signed Certificate Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/definitions/user/user-cert.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema" ,
+    "type": "object",
+    "required": [
+        "keys",
+        "profile",
+        "sig"
+    ],
+    "properties": {
+        "keys": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/definitions/crypto/keypair.json"
+        },
+        "profile": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/definitions/user/profile.json"
+        },
+        "sig": {
+            "type": "string",
+            "format": "base64"
+        }
+    }
+}

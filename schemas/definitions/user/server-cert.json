@@ -1,0 +1,35 @@
+﻿{
+    "title": "Server-Signed Certificate Information Schema",
+    "$id": "https://static.echo-chat.au/schemas/definitions/user/server-cert.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema" ,
+    "type": "object",
+    "required": [
+        "origin",
+        "keys",
+        "profile",
+        "rep",
+        "sig"
+    ],
+    "properties": {
+        "origin": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/origin.json"
+        },
+        "keys": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/definitions/crypto/keypair.json"
+        },
+        "profile": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/definitions/user/profile.json"
+        },
+        "rep": {
+            "type": "object",
+            "$ref": "https://static.echo-chat.au/schemas/definitions/user/reputation/rep.json"
+        },
+        "sig": {
+            "type": "string",
+            "format": "base64"
+        }
+    }
+}
