@@ -10,6 +10,7 @@
     "properties": {
         "sign-challenge": {
             "type": "string",
+            "format": "base64",
             "minLength": 128,
             "maxLength": 128
         },
