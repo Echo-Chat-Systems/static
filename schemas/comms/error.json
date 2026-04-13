@@ -7,6 +7,9 @@
         "source"
     ],
     "properties": {
+        "message": {
+            "type": "string"
+        },
         "source": {
             "type": "object",
             "$ref": "https://static.echo-chat.au/schemas/comms/basic-message.json"
