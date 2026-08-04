@@ -7,6 +7,9 @@
         "name"
     ],
     "properties": {
+        "server": {
+            "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
+        },
         "name": {
             "type": "string"
         }
