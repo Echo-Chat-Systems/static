@@ -7,7 +7,7 @@
         "name"
     ],
     "properties": {
-        "server": {
+        "guild": {
             "$ref": "https://static.echo-chat.au/schemas/snowflake.json"
         },
         "name": {
